@@ -21,12 +21,12 @@ Built using **Streamlit**, this tool allows users to:
     "Invoice Total": "ZAR 1275.43"
   }
 ]
-
----
+```
 
 ## 🚀 How to Run
 
 1. Clone the repo
+```bash
 git clone https://github.com/AndrewCarlBoardman/invoice-analyser-ai.git
 cd invoice-analyser-ai
 
@@ -50,8 +50,6 @@ Or copy from .env.example (included).
 5. Run the app
 streamlit run app.py
 
----
-
 ## ⚙️ Tech Stack
 Python
 
@@ -60,8 +58,6 @@ Streamlit
 Azure Form Recognizer
 
 dotenv
-
---
 
 ##📁 Project Structure
 
@@ -72,7 +68,6 @@ invoice-analyser-ai/
 ├── requirements.txt
 └── README.md
 
---
 
 ##🧠 About the Author
 This project is part of a portfolio of AI-powered mini apps by Andrew Boardman to demonstrate real-world use of AI and automation.
