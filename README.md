@@ -22,7 +22,10 @@ Built using **Streamlit**, this tool allows users to:
   }
 ]
 
-🚀 How to Run
+---
+
+## 🚀 How to Run
+
 1. Clone the repo
 git clone https://github.com/AndrewCarlBoardman/invoice-analyser-ai.git
 cd invoice-analyser-ai
@@ -47,7 +50,9 @@ Or copy from .env.example (included).
 5. Run the app
 streamlit run app.py
 
-⚙️ Tech Stack
+---
+
+## ⚙️ Tech Stack
 Python
 
 Streamlit
@@ -56,7 +61,9 @@ Azure Form Recognizer
 
 dotenv
 
-📁 Project Structure
+--
+
+##📁 Project Structure
 
 invoice-analyser-ai/
 ├── app.py
@@ -64,7 +71,10 @@ invoice-analyser-ai/
 ├── .env.example
 ├── requirements.txt
 └── README.md
-🧠 About the Author
+
+--
+
+##🧠 About the Author
 This project is part of a portfolio of AI-powered mini apps by Andrew Boardman to demonstrate real-world use of AI and automation.
 
 MIT Licensed.
