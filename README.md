@@ -50,6 +50,8 @@ Or copy from .env.example (included).
 5. Run the app
 streamlit run app.py
 
+```
+
 ## ⚙️ Tech Stack
 Python
 
@@ -59,7 +61,7 @@ Azure Form Recognizer
 
 dotenv
 
-##📁 Project Structure
+##  Project Structure
 
 invoice-analyser-ai/
 ├── app.py
@@ -69,7 +71,7 @@ invoice-analyser-ai/
 └── README.md
 
 
-##🧠 About the Author
+##  About the Author
 This project is part of a portfolio of AI-powered mini apps by Andrew Boardman to demonstrate real-world use of AI and automation.
 
 MIT Licensed.
