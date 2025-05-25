@@ -28,6 +28,7 @@ This Streamlit app allows users to securely log in with their Microsoft 365 (Azu
 ---
 
 ##  📁 Project Structure
+
 invoice-analyzer-ai/
 ├── app.py # Main Streamlit app
 ├── login_auth.py # Azure AD login logic
@@ -47,6 +48,7 @@ invoice-analyzer-ai/
 ```bash
 git clone https://github.com/AndrewCarlBoardman/invoice-analyzer.git
 cd invoice-analyzer
+```
 
 2. Set Up Environment Variables
 Create a .env file in the project root:
@@ -65,6 +67,7 @@ streamlit run app.py
 ---
 
 ## 🔐 Azure AD Setup
+
 Go to Azure Portal
 
 Register an App → Add Redirect URI: http://localhost:8501
@@ -78,6 +81,7 @@ You're ready to log in via Microsoft 365!
 ---
 
 ## 📤 Output Example
+
 A successfully processed invoice CSV will contain:
 
 Invoice No	Date	Vendor	Total (ZAR)	VAT (ZAR)
@@ -86,6 +90,7 @@ Invoice No	Date	Vendor	Total (ZAR)	VAT (ZAR)
 ---
 
 ## 💼 Use Cases
+
 Internal MSP invoice auditing
 
 Freelancers managing client PDFs
@@ -97,12 +102,15 @@ AI + Azure portfolio demo
 ---
 
 ## 🧑‍💻 Author
+
 Andrew Boardman
 Systems Engineer • AI Developer
 🔗 GitHub
 
+---
 
 ## 🪪 License
+
 MIT Licensed — free to use and adapt for educational and personal projects.
 
 yaml
