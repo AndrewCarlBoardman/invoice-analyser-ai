@@ -1,77 +1,122 @@
-# Invoice Analyzer AI
+# 📊 Invoice Analyzer (with Microsoft 365 Login)
 
-This is a mini-project that uses **Azure Form Recognizer** to extract structured data (e.g., vendor name, customer name, invoice date, and total amount) from uploaded invoice images or PDFs.
+[![Invoice Analyzer](https://img.shields.io/badge/Streamlit-Invoice%20Analyzer-blue)](https://github.com/AndrewCarlBoardman/invoice-analyzer)
 
-Built using **Streamlit**, this tool allows users to:
-- Upload one or more invoices
-- View extracted data in a user-friendly format
-- Export results to CSV
-- Handle South African invoices (ZAR currency)
+This Streamlit app allows users to securely log in with their Microsoft 365 (Azure Active Directory) credentials and analyze South African invoices using AI. It supports batch uploads, AI extraction, and CSV export — ideal for MSPs or small finance teams.
 
 ---
 
-## 🔍 Example Output
+## 🚀 Features
 
-```json
-[
-  {
-    "Vendor Name": "Msunduzi Municipality",
-    "Customer Name": "Ms. GAIL CARLETTE BOARDMAN",
-    "Invoice Date": "2025-04-15",
-    "Invoice Total": "ZAR 1275.43"
-  }
-]
-```
+- 🔐 **Microsoft 365 Login (Azure AD)**
+- 📁 **Upload multiple invoices (PDFs)**
+- 🧠 **AI-powered data extraction**
+- 📊 **View and analyze results in a dashboard**
+- 📤 **Export to CSV**
+- 🇿🇦 **Optimized for South African invoice formats**
 
-## 🚀 How to Run
+---
 
-1. Clone the repo
-```bash
-git clone https://github.com/AndrewCarlBoardman/invoice-analyser-ai.git
-cd invoice-analyser-ai
+## 🧰 Tech Stack
 
-2. Set up a virtual environment (recommended)
-python -m venv venv
-venv\Scripts\activate   # On Windows
-# or
-source venv/bin/activate  # On macOS/Linux
+- Python
+- Streamlit
+- MSAL (Microsoft Authentication Library)
+- Azure Form Recognizer (optional)
+- `dotenv` for environment management
 
-3. Install dependencies
-pip install -r requirements.txt
-
-4. Configure Azure credentials
-Create a .env file in the root directory using this format:
-
-AZURE_FORM_RECOGNIZER_ENDPOINT=https://your-resource-name.cognitiveservices.azure.com/
-AZURE_FORM_RECOGNIZER_KEY=your-key-here
-
-Or copy from .env.example (included).
-
-5. Run the app
-streamlit run app.py
-
-```
-
-## ⚙️ Tech Stack
-Python
-
-Streamlit
-
-Azure Form Recognizer
-
-dotenv
+---
 
 ##  📁 Project Structure
-invoice-analyser-ai/
-├── app.py
-├── extract_invoice.py
-├── .env.example
-├── requirements.txt
+invoice-analyzer-ai/
+├── app.py # Main Streamlit app
+├── login_auth.py # Azure AD login logic
+├── extract_invoice.py # AI invoice processing
+├── test_extract.py # Test cases for invoice extraction
+├── test.py # Placeholder/test script
+├── requirements.txt # Dependencies
+├── .env.example # Sample environment config
 └── README.md
 
+---
 
-##  🧠 About the Author
-This project is part of a portfolio of AI-powered mini apps by Andrew Boardman to demonstrate real-world use of AI and automation.
+## 🛠️ Getting Started
 
-MIT Licensed.
+1. Clone the Repository
+
+```bash
+git clone https://github.com/AndrewCarlBoardman/invoice-analyzer.git
+cd invoice-analyzer
+
+2. Set Up Environment Variables
+Create a .env file in the project root:
+
+AZURE_CLIENT_ID=your-client-id
+AZURE_CLIENT_SECRET=your-client-secret
+AZURE_TENANT_ID=your-tenant-id
+AZURE_REDIRECT_URI=http://localhost:8501
+
+3. Install Requirements
+pip install -r requirements.txt
+
+4. Run the App
+streamlit run app.py
+
+---
+
+## 🔐 Azure AD Setup
+Go to Azure Portal
+
+Register an App → Add Redirect URI: http://localhost:8501
+
+Configure "User.Read" Microsoft Graph permission
+
+Generate a client secret and copy it to your .env
+
+You're ready to log in via Microsoft 365!
+
+---
+
+## 📤 Output Example
+A successfully processed invoice CSV will contain:
+
+Invoice No	Date	Vendor	Total (ZAR)	VAT (ZAR)
+001	2024-04-10	ABC Corp	1,150.00	150.00
+
+---
+
+## 💼 Use Cases
+Internal MSP invoice auditing
+
+Freelancers managing client PDFs
+
+Small business finance automation
+
+AI + Azure portfolio demo
+
+---
+
+## 🧑‍💻 Author
+Andrew Boardman
+Systems Engineer • AI Developer
+🔗 GitHub
+
+
+## 🪪 License
+MIT Licensed — free to use and adapt for educational and personal projects.
+
+yaml
+Copy
+Edit
+
+---
+
+### ✅ Next Steps in GitHub
+
+1. Replace the current `README.md` with the above.
+2. Commit and push:
+   ```bash
+   git add README.md
+   git commit -m "Update README with project badge, features, and setup guide"
+   git push
 

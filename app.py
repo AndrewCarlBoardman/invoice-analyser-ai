@@ -1,10 +1,22 @@
 import streamlit as st
 from extract_invoice import extract_invoice_fields
 import pandas as pd
+from login_auth import login_flow
 
 st.set_page_config(page_title="Invoice Analyzer AI")
 st.title("📄 Invoice Analyzer AI")
 st.write("Upload one or more invoices (PDF or image)")
+
+login_flow()
+
+if "token" not in st.session_state:
+    st.stop()
+
+if "username" in st.session_state:
+    st.success(f"✅ Logged in as: {st.session_state.username}")
+
+if "token" not in st.session_state:
+    st.stop()
 
 # Accept multiple file uploads
 uploaded_files = st.file_uploader(
