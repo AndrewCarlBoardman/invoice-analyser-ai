@@ -1,4 +1,4 @@
-# 📊 Invoice Analyzer (with Microsoft 365 Login)
+# 📊 Invoice Analyser (with Microsoft 365 Login)
 
 [![Invoice Analyzer](https://img.shields.io/badge/Streamlit-Invoice%20Analyzer-blue)](https://github.com/AndrewCarlBoardman/invoice-analyzer)
 
@@ -11,7 +11,7 @@ This Streamlit app allows users to securely log in with their Microsoft 365 (Azu
 - 🔐 **Microsoft 365 Login (Azure AD)**
 - 📁 **Upload multiple invoices (PDFs)**
 - 🧠 **AI-powered data extraction**
-- 📊 **View and analyze results in a dashboard**
+- 📊 **View and analyse results in a dashboard**
 - 📤 **Export to CSV**
 - 🇿🇦 **Optimized for South African invoice formats**
 
